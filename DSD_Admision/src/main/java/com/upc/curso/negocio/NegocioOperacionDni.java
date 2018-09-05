@@ -10,23 +10,16 @@ import com.upc.curso.entidades.Persona;
 
 @Service
 public class NegocioOperacionDni {
-	
+
 	@Autowired
 	private PersonaRepositorio personaRepositorio;
 
-	
-	
 	public List<Persona> ConPersona() {
-		
+
 		List<Persona> oLisPersona = null;
-				
-		oLisPersona = personaRepositorio.allpersona() ;
-		
+		oLisPersona = personaRepositorio.allpersona();
 		return oLisPersona;
-		
-	
+
 	}
-	
-	
-	
+
 }
